@@ -1,11 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>simple tailwind AB6AXuDo7msaWLQaVY-9Uz89HOXMcjo_vvrdPE303y-nVSV19ciJ9CJeeVvcgn1RlKWg8A7-t3EqXbmqXO7JHf0jLjq_1SB0JvI_JKGWak3cD3x5rMBqZw-w4TKNRNtHr5l_G6imsNHWb21UtwIQjf7mEP7zbkYwv5Fe7g3e_Sw1aQqD9lgLCkuyZ0mvp7ng3SzEOrCJCbYDkJ4L1i-YK1iUqWJKseEinHHRLB4RrIJCpqRTJIGub4Oy9nYz9lcUaNf3JcJeYvawt480_zU</title>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>App Store Overview Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3b82f6",
+              "background-light": "#f3f4f6",
+              "background-dark": "#0f172a",
+              "card-light": "#ffffff",
+              "card-dark": "#1e293b",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              "xl": "1.5rem",
+              "2xl": "2rem",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
 </head>
-<body>
-    
-</body>
-</html>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen transition-colors duration-300">
+<div class="flex h-screen overflow-hidden">
+<aside class="w-20 hidden lg:flex flex-col items-center py-8 border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+<div class="mb-10 text-primary">
+<span class="material-icons-outlined text-4xl">rocket_launch</span>
+</div>
+<nav class="space-y-8 flex flex-col">
+<a class="text-primary" href="#"><span class="material-icons-outlined text-2xl">grid_view</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-icons-outlined text-2xl">videogame_asset</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-icons-outlined text-2xl">apps</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-icons-outlined text-2xl">update</span></a>
+</nav>
+<div class="mt-auto space-y-8 flex flex-col">
+<button class="text-slate-400 hover:text-primary transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-outlined text-2xl">dark_mode</span>
+</button>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-icons-outlined text-2xl">settings</span></a>
+</div>
+</aside>
+<main class="flex-1 overflow-y-auto p-6 lg:p-10 hide-scrollbar">
+<header class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+<h1 class="text-3xl font-bold tracking-tight">Overview</h1>
+<div class="flex items-center gap-4">
+<div class="relative group">
+<span class="material-icons-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary transition-colors">search</span>
+<input class="pl-10 pr-4 py-2.5 w-full md:w-64 rounded-xl border-none bg-white dark:bg-slate-800 shadow-sm focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="Search..." type="text"/>
+</div>
+<button class="p-2.5 bg-white dark:bg-slate-800 rounded-xl shadow-sm text-slate-500 hover:text-primary transition-colors relative">
+<span class="material-icons-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-800"></span>
+</button>
+<img alt="User Profile" class="w-11 h-11 rounded-xl object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrXQ2mZ-9chc6sRN6ZHLHB1Yrr0zLHlJFAJCyqADxBS1sZRk9R-tNZVOa3QKFzyJ0TVkClKf-QusyiiWjeGV6aPR_g5yePbX9vSwgqepCvgMaZKiogy0rz1JSkeS9zNPevZ2htps8-vJmyXxDpIQdELs1c_v7_xPuv1rzwbR77s0PcdIkgmc7sbVMgS957_xRcn1fzX2i02xN-KwJ1NBxV0v3Vj5cXhCwMV9uOY7AB4EDTRyFwJjMuvQt0ZSdz5_lb03wgCH253x4"/>
+</div>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-8 space-y-10">
+<section class="relative h-[320px] rounded-3xl overflow-hidden group shadow-xl">
+<img alt="Vectornator Art" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWjMfz40TsR0B3XuebwpDRTX8xvjtZawU0j7oxNW1Nr6IfWVeI1h9GlrafmN9pi0vmChSfWcCRpcKxPbpWxYiCQyhTp0w4Sey74Rw6qTryM8-O7Xz2bwogSOW_sbQLDXxcEOX16XMjGV7pV3tFKyHDbZUc7KiOFWwkdCM68s5jeszQEV9RyrtIBWSkgvCPjTOBTiTodaPU3mIkORQN3EGw8Oc2L6oufnpAYYEjTUYrn4wSW3P368_RVDrBJnrWLnNG_V2H3b9MLf8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="text-white max-w-lg">
+<span class="uppercase text-xs font-bold tracking-widest text-blue-400 mb-2 block">Graphics and Design</span>
+<h2 class="text-3xl font-bold mb-2">Vectornator: Design Software</h2>
+<p class="text-slate-300 text-sm">Create designs, interfaces and beautiful illustrations with this professional vector tool designed for productivity.</p>
+</div>
+<button class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg transition-all active:scale-95 whitespace-nowrap">
+                                Download
+                            </button>
+</div>
+</section>
+<section>
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-xl font-bold">Categories</h3>
+<a class="text-sm font-semibold text-primary hover:underline" href="#">Show all</a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<button class="flex items-center gap-3 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-icons-outlined">videogame_asset</span>
+</div>
+<span class="font-semibold">Games</span>
+</button>
+<button class="flex items-center gap-3 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-10 h-10 rounded-xl bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-icons-outlined">palette</span>
+</div>
+<span class="font-semibold">Creation</span>
+</button>
+<button class="flex items-center gap-3 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-10 h-10 rounded-xl bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-icons-outlined">code</span>
+</div>
+<span class="font-semibold">Dev</span>
+</button>
+<button class="flex items-center gap-3 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-10 h-10 rounded-xl bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-icons-outlined">business_center</span>
+</div>
+<span class="font-semibold">Work</span>
+</button>
+</div>
+</section>
+<section>
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-xl font-bold">Top Games &amp; Apps</h3>
+<a class="text-sm font-semibold text-primary hover:underline" href="#">Show all</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-slate-800 p-4 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-transparent dark:border-slate-700/50">
+<div class="relative aspect-square rounded-2xl overflow-hidden mb-4">
+<img alt="Tayasui sketches" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3rVtf_tJCOodDRyJCI_FB3TwtD_BAZnVlg5s54J1-RX_EXOUz7_fxf4JDQnaUawfu0DxZCkuxmy-seq7DxdHBAqcrC_9vd-lBc6LDwE09iHUHJxGwH8q6kSPPPs2eWkj3rbuchH5HlRiEKwudLsANCBhi6tZrhUMIPmYlGdaqkhu-aulAab4HSSykFZtZGL4NGPPym7s4kOuCKuEy6EumJcwRHZ0FpAS_XbZM5yafQRCFRT0nHOOdWP44q7sBwBqP1oIsvGRg1Tg"/>
+</div>
+<h4 class="font-bold">Tayasui sketches</h4>
+<div class="flex items-center justify-between mt-1">
+<span class="text-xs text-slate-500 dark:text-slate-400 uppercase font-medium">Creation</span>
+<a class="text-xs font-bold text-primary" href="#">Download</a>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 p-4 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-transparent dark:border-slate-700/50">
+<div class="relative aspect-square rounded-2xl overflow-hidden mb-4">
+<img alt="Myst Game" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDhct6zWypOTHCyOC0KwhOszhm6KY_5CAlUIuU3JzyX703KfbXg-QAZ7TRlOly066bqR0ruvW4jVKjreLoAGL1yCi_6ClG2Ue-bOmFgyOXjuAshGkbjyGOx-HbM3P_gOqaKT7t-6bvYGnaaKZHAt5D868SHWuicAcxP9OpFLPB3uw2Unh9frs6-deIFT4eoSsSJPmFXbkXaXfNC9uMPreBe6etlWX7pT0HV9YGmiYcZn_HvKgFODxSE11ogrp1atQ0SdJSK58X8MM"/>
+</div>
+<h4 class="font-bold">Myst</h4>
+<div class="flex items-center justify-between mt-1">
+<span class="text-xs text-slate-500 dark:text-slate-400 uppercase font-medium">Adventure Game</span>
+<span class="text-xs font-bold text-primary">$12.00</span>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 p-4 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-transparent dark:border-slate-700/50">
+<div class="relative aspect-square rounded-2xl overflow-hidden mb-4">
+<img alt="Swift Playgrounds" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAlefWWfGDxkLvT2tSVvjCaR1wD3r3z74Bhjsc-fucPULb0NZuOwEskhZjShvnRiP-q81hq6eX20yRVXdW9RLWpu-CCcMnhmIzCMGexDx_QBTCcWVoDjbkyo0zlHDQoeeXySnmstSJJ-A3HXRA5JpO4C-BCDHCNZIrBp-O-rcksK-4uDOXmuhqKdMrJ1bmEK5EYKTzp1Lhw6G1IeTuk8JbGFzfb0U3wITau2v8dDeumy1MLckI3FhE_Lq9xNIltXW39CYwcydJNsQ"/>
+</div>
+<h4 class="font-bold">Swift Playgrounds</h4>
+<div class="flex items-center justify-between mt-1">
+<span class="text-xs text-slate-500 dark:text-slate-400 uppercase font-medium">Development</span>
+<span class="text-xs font-bold text-primary">$25.00</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="lg:col-span-4 space-y-8">
+<section class="bg-white dark:bg-slate-800 p-6 rounded-3xl shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-lg font-bold">Trending</h3>
+<a class="text-xs font-semibold text-primary hover:underline" href="#">Show all</a>
+</div>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/40 rounded-xl flex items-center justify-center text-blue-500">
+<span class="material-icons-outlined">send</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-sm font-bold truncate">Telegram</h4>
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold tracking-tight">Social Networks</p>
+</div>
+<button class="text-[11px] font-bold text-primary bg-blue-50 dark:bg-blue-900/20 px-3 py-1.5 rounded-lg hover:bg-primary hover:text-white transition-colors">Download</button>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-green-100 dark:bg-green-900/40 rounded-xl flex items-center justify-center text-green-500">
+<span class="material-icons-outlined">chat</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-sm font-bold truncate">WhatsApp Desktop</h4>
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold tracking-tight">Trending</p>
+</div>
+<button class="text-[11px] font-bold text-primary bg-blue-50 dark:bg-blue-900/20 px-3 py-1.5 rounded-lg hover:bg-primary hover:text-white transition-colors">Download</button>
+</div>
+<div class="flex items-center gap-4">
+<img alt="Machinarium" class="w-12 h-12 rounded-xl object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZW_FquS_z02jWMWVYptryemx4iuYIj0_j2Qo9oXkC6wWnC3Fp6MqRP_H2fJi6powtwZlGG6WVpzYPi1bvm03ZtokXdifqNSN84EpYlsjBzsEadKyLu57XB5t-OodpMhplNZ_erzuSqxdEyBErlAjQswLyl6-HkDcFSEHDEh3Ysz_E94MYlNOZFjKXW2IhP9LlssX5WkNHOtsWpJZnyrsguHijoMx-BgKD3HC4WJpHoEyEG-C8iUUaRtuzbJjOvnBNgx9ytwd3pjQ"/>
+<div class="flex-1 min-w-0">
+<h4 class="text-sm font-bold truncate">Machinarium</h4>
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold tracking-tight">Adventure Game</p>
+</div>
+<button class="text-[11px] font-bold text-primary bg-blue-50 dark:bg-blue-900/20 px-3 py-1.5 rounded-lg hover:bg-primary hover:text-white transition-colors">Download</button>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/40 rounded-xl flex items-center justify-center text-indigo-500">
+<span class="material-icons-outlined">description</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-sm font-bold truncate">Microsoft Word</h4>
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold tracking-tight">Text Editor</p>
+</div>
+<button class="text-[11px] font-bold text-primary bg-blue-50 dark:bg-blue-900/20 px-3 py-1.5 rounded-lg hover:bg-primary hover:text-white transition-colors">Download</button>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-slate-800 p-6 rounded-3xl shadow-sm overflow-hidden relative group">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-4">
+<img alt="Bring You Home Game" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo7msaWLQaVY-9Uz89HOXMcjo_vvrdPE303y-nVSV19ciJ9CJeeVvcgn1RlKWg8A7-t3EqXbmqXO7JHf0jLjq_1SB0JvI_JKGWak3cD3x5rMBqZw-w4TKNRNtHr5l_G6imsNHWb21UtwIQjf7mEP7zbkYwv5Fe7g3e_Sw1aQqD9lgLCkuyZ0mvp7ng3SzEOrCJCbYDkJ4L1i-YK1iUqWJKseEinHHRLB4RrIJCpqRTJIGub4Oy9nYz9lcUaNf3JcJeYvawt480_zU"/>
+</div>
+<h4 class="text-xl font-bold mb-1">Bring You Home</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-6">A cute, purely visual puzzle game for the whole family.</p>
+<button class="w-full bg-primary py-4 rounded-2xl text-white font-bold text-lg shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-all hover:-translate-y-1 active:scale-95">
+                            $21.50
+                        </button>
+</section>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
